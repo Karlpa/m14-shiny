@@ -5,5 +5,6 @@ shinyUI(fluidPage(
     
     # Use plotlyOutput to show your map
     plotlyOutput('map')
-  )
+  ),
+  tabPanel("Votes", value = ~df$votes)
 ))
